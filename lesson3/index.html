@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>
+        This is lesson 3
+    </title>
+</header>
+<h1> This is heading </h1>
+<style>
+ #result{
+        text-decoration: underline;
+        font-weight: bold;
+        font-style: italic;
+        color: rgb(194, 4, 252);
+      }
+      #blue{
+       
+       color: rgb(38, 0, 255);
+     }
+     #yellow{
+       color: rgb(251, 255, 0);
+     }
+      
+</style>
+<body>
+
+    <input type="text" id="input1" style="color:blue"></input> &#247; <input type="text" id="input2" style="color:rgb(246, 255, 0)"></input>
+   
+    <button onclick="calculate()">=</button> <span id="result"></span><br>
+    <script>
+        function calculate() {
+            var num1 = parseInt(document.getElementById('input1'). value);
+            var num2 = parseInt(document.getElementById('input2'). value);
+            // ParseInt changes it into an interger
+            //document is the entire code
+            //get element by id checks all of the code and tried to find it
+            //value gets the value from the id
+            // &#247;is divide
+            var ans = num1 / num2;
+            document.getElementById('result').innerText = ans;
+        }
+    </script>
+
+    <body>
+
+</html>
