@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <header>
-        <title>
-            Card Game
-        </title>
-    </header>
-    <body>
-        content
-    </body>
+<header>
+    <title>
+        Card game
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</header>
+
+<body>
+    <div class="container">
+        <div class="scoreboard">
+            <button class="start-button" onclick="newGame()">Start</button>
+
+            <div class="countdown">
+                <label id="minutes">00</label>:<label id="seconds">00</label>
+                <br />
+                <label id="totalSeconds"></label>
+            </div>
+        </div>
+
+        <div class="gameBoard">
+            <!-- <div class="cardWrapper">
+                <div class="card" id="card-1" data-number="" data-match="false" data-flip="false">
+                    <div class="card-face card-face-front"></div>
+                    <div class="card-face card-face-back"></div>
+                </div>
+            </div> -->
+            <div class="card-face-front">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="code.js"></script>
+
 </html>
