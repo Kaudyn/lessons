@@ -1,8 +1,21 @@
 let totalSeconds = 0;
 let intervalId;
 
+document.addEventListener("DOMContentLoaded", ready);
+ 
+function ready() {
+    console.log('The web page is ready');
+    var Kaidyn = document.querySelector('.Kaidyn')
+    console.log(Kaidyn.dataset.number)
+    init();
+}
+
 function newGame() {
     reset();
+}
+
+function init(){
+
 }
 
 function reset() {
@@ -13,6 +26,7 @@ function reset() {
     }
     intervalId = setInterval(setTime, 1000);
 }
+
 
 function setTime() {
   //let daysLabel = document.getElementById("days");
