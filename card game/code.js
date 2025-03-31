@@ -5,8 +5,6 @@ document.addEventListener("DOMContentLoaded", ready);
  
 function ready() {
     console.log('The web page is ready');
-    var Kaidyn = document.querySelector('.Kaidyn')
-    console.log(Kaidyn.dataset.number)
     init();
 }
 
